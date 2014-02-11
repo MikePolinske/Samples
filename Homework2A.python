@@ -1,0 +1,34 @@
+#!/usr/bin/python
+
+import sys;
+
+argCount = len(sys.argv);
+
+if (argCount != 5):
+    print "Please provide 4 numeric test scores between 0 and 100";
+else:
+    score1 = int(sys.argv[1]);
+    score2 = int(sys.argv[2]);
+    score3 = int(sys.argv[3]);
+    score4 = int(sys.argv[4]);
+    if (score1 >= 0 and score1 <= 100 and score2 >= 0 and score2 <= 100 and score3 >= 0 and score3 <= 100 and score4 >= 0 and score4 <= 100):
+        avg = (score1 + score2 + score3 + score4) / 4;
+        print "The average score is: ", avg;
+        letterGrade = " ";
+        if (avg >= 90):
+            letterGrade = "A";
+        elif (avg >= 80):
+            letterGrade = "B";
+        elif (avg >= 70):
+            letterGrade = "C";
+        elif (avg >= 60):
+            letterGrade = "D";
+        elif (avg >= 50):
+            letterGrade = "F";
+        if (letterGrade == " "):
+            print "Please seek extra help for this course";
+        else:
+            print "Letter Grade: ", letterGrade;
+    else:
+        print "Please provide 4 numeric test scores between 0 and 100";
+

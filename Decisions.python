@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+name = raw_input("What is your name? ");
+age = input("How old are you? ");
+
+if (age >= 18):
+    print "You are eligible to vote";
+    print "The voting booth is down the hall, on the right.";
+else:
+    print "You are ineligible to vote";
+    
+if (name == "Mike"):
+    print "You have won a million dollars.";
+    
+#  =    assignment operator     as in age = 19;
+#  ==   comparison operator     which means equality
+

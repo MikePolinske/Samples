@@ -1,0 +1,15 @@
+#!/usr/bin/python
+
+name = raw_input("Enter your first name: ");
+print "Hello ", name;
+
+age = input("Enter your age: ");
+print "You are ", age, " years old";
+
+ageInDogYears = age * 7;
+print "In dog years you are ", ageInDogYears , " years old";
+
+#raw_input reads every input as a string
+#string is a string of characters
+#math requires integer or float
+#input reads every input as a float or integer

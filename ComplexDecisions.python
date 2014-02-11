@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+age = input("How old are you? ");
+
+if (age < 18):
+    print "You are just a kid";
+elif (age < 30):
+    print "You are in your prime";
+elif (age < 40):
+    print "It's time to work hard";
+elif (age < 50):
+    print "Time to start thinking about saving for retirement";
+elif (age < 60):
+    print "Time to slow down and spend time with your family";
+else:
+    print "You are old, dude";

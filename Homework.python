@@ -1,0 +1,24 @@
+#!/usr/bin/python
+import math;
+
+first = "Mike";
+last = "Polinske";
+age = 43;
+
+print first + " " + last + " " + str(age);
+
+sideA = 12.55;
+sideB = 17.85;
+sideC = math.sqrt((sideA * sideA) + (sideB * sideB));
+print sideC;
+
+operand1 = 95;
+operand2 = 64.5;
+print (str(operand1) + " + " + str(operand2) + " = " + str(operand1 + operand2));
+print (str(operand1) + " - " + str(operand2) + " = " + str(operand1 - operand2));
+print (str(operand1) + " * " + str(operand2) + " = " + str(operand1 * operand2));
+print (str(operand1) + " / " + str(operand2) + " = " + str(operand1 / operand2));
+print (str(operand1) + " % " + str(operand2) + " = " + str(operand1 % operand2));
+
+#  The print statements above work the best since you can not concatenate strings and numerics together, you have to convert the numerics to strings.
+#  If the operands were to change between integers, longs or floats no changes in the print statements should be necessary.
